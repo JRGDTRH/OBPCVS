@@ -1,10 +1,16 @@
 # Observer-Based Point Cloud Viewshed
 
-Initial project for introduction to stacs and COGs. This project computes and visualizes the viewshed (visible terrain) from a given observer location using high-resolution DEM data (3DEP or NASADEM) and point cloud analysis. It generates both 2D and 3D visualizations of visible terrain, horizon profiles, and more.
+Project for exploring stacs and COGs. This project computes and visualizes the viewshed (visible terrain) from a given observer location using high-resolution DEM data (3DEP or NASADEM) and point cloud analysis. It generates both 2D and 3D visualizations of visible terrain, horizon profiles, and more. The tools is very realistic in terms of blocking elevation, therefore some results may be unsatisfying to look at. I would additionally like to extend this to include some bathymetry datasets as well. Currently the script excludes continous flat terrain from plotting for brevity which needs some adjustment. 
+
+![image](https://github.com/user-attachments/assets/03a89301-c519-488f-94af-c81995dafd9e)
+
+![image](https://github.com/user-attachments/assets/0648aeb1-6ffa-42aa-b709-8c9e97f3d4df)
 
 ## Features
 
-- Downloads and mosaics DEM tiles from Microsoft Planetary Computer (3DEP preferred, NASADEM fallback)
+- Downloads and mosaics DEM tiles from Microsoft Planetary Computer.
+    - 3DEP proritized for higher resolution in CONUS.
+    - NASADEM fallback when 3DEP unavailable and outside CONUS
 - Projects observer location to UTM and extracts DEM window
 - Vectorized computation of visible points and horizon angles for all azimuths
 - Multiple visualizations:
