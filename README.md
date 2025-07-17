@@ -71,4 +71,6 @@ pip install numpy pandas rasterio pyproj pystac-client planetary-computer matplo
 - [3DEP Seamless DEM](https://planetarycomputer.microsoft.com/dataset/3dep-seamless)
 - [NASADEM](https://planetarycomputer.microsoft.com/dataset/nasadem)
 
+## License
 
+This project is open source and available under the MIT License.
